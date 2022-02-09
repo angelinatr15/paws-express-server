@@ -1,0 +1,48 @@
+When I click adopt 
+
+I want a form to appear with the new owner:
+
+pet name [need to create in table as well]: {pet}
+First Name 
+Last Name
+Phone Number
+Email Address
+Schedule Pick - Up [apt will be a scroll bar that will have the available dates and times]
+
+After I click submit. An alert will appear to show that the submission was successful. The page will automatically reload. Once it reloads the pet adopted will be removed from the database and the new owner's information will be transfered to the database for scheduling. 
+
+create table:
+
+	CREATE TABLE adopted(
+	id SERIAL PRIMARY KEY, 
+	pet_name VARCHAR(255),
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	phone_number VARCHAR(255),
+	email VARCHAR(255),
+	schedule_pickup VARCHAR(255)
+	);
+	
+	INSERT INTO adopted(pet_name, first_name, last_name, phone_number, email, schedule_pickup) VALUES ('Thumper','Marlo','Jean','281-635-2222','marlo@gmail.com', 'Monday Morning');
+
+
+
+ <div className="modal fade fixed top-0 left-80  w-3/5 h-3/5 outline-none overflow-x-hidden m-20 overflow-y-auto border-2 rounded-md "
+  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  
+  Education Tab 
+  
+  
+  
+  -create a new table to store all my data 
+  -create a detail button. Once clicked it will send the client to that page. 
+  
+  
+  table will have: image, species, description 
+  
+  	CREATE TABLE states(
+	id SERIAL PRIMARY KEY, 
+	state VARCHAR(255)
+	);
+		
+	INSERT INTO education(image, species, description) VALUES ('https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg', 'Bird', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.');
